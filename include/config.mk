@@ -38,5 +38,5 @@ compile:
 # Update example files.
 .PHONY: update_examples
 update_examples:
-	curl -Ss -o docs/examples/full.json https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/gh-pages/example/full.json
-	curl -Ss -o docs/examples/full_record_package.json https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/gh-pages/example/full_record_package.json
+	curl -Ss -o docs/examples/full.json https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/master/example/full.json
+	curl -Ss -o docs/examples/full_record_package.json https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/master/example/full_record_package.json

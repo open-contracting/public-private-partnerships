@@ -124,11 +124,11 @@ msgstr ""
 msgid ""
 "View the [data in OCDS show here](https://open-contracting.github.io/ocds-"
 "show-ppp/?load=https://raw.githubusercontent.com/open-contracting/ocds-show-"
-"ppp/gh-pages/example/full_record_package.json)."
+"ppp/master/example/full_record_package.json)."
 msgstr ""
 "Ver los [datos en OCDS show aquí](https://open-contracting.github.io/ocds-"
 "show-ppp/?load=https://raw.githubusercontent.com/open-contracting/ocds-show-"
-"ppp/gh-pages/example/full_record_package.json)."
+"ppp/master/example/full_record_package.json)."
 
 #: ../../docs/example.md:36
 msgid "In the record within OCDS show:"

@@ -63,7 +63,7 @@ This way, stakeholders can more easily find the information they need to underst
 .. image:: _assets/ocds_show.png
    :align: right
    :width: 400
-   :target: https://open-contracting.github.io/ocds-show-ppp/?load=https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/gh-pages/example/full.json
+   :target: https://open-contracting.github.io/ocds-show-ppp/?load=https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/master/example/full.json
 ```
 
 With the combination of:
@@ -79,4 +79,4 @@ In particular:
 * OCDS for PPP data can be converted into spreadsheet formats for detailed analysis;
 * Any third-party can build an interface using the OCDS for PPPs standard;
 
-You can explore a [preview of OCDS Show with example data](https://open-contracting.github.io/ocds-show-ppp/?load=https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/gh-pages/example/full.json).
+You can explore a [preview of OCDS Show with example data](https://open-contracting.github.io/ocds-show-ppp/?load=https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/master/example/full.json).
