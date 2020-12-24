@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Open Contracting Partnership
+# This file is distributed under the same license as the Open Contracting Data Standard for Public Private Partnerships package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ben Webb <ben.webb@opendataservices.coop>, 2017
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Contracting Data Standard for Public Private Partnerships 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-23 14:33-0500\n"
+"PO-Revision-Date: 2017-08-29 13:53+0000\n"
+"Last-Translator: Ben Webb <ben.webb@opendataservices.coop>, 2017\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/74632/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../docs/404.md:5
+msgid "404 Not found"
+msgstr "404 Not Found"
+
+#: ../../docs/404.md:7
+msgid ""
+"We couldn't find the page you were looking for in this version of the "
+"documentation."
+msgstr ""
+"No pudimos encontrar la página que buscabas en esta versión de la "
+"documentación"
+
+#: ../../docs/404.md:9
+msgid ""
+"Try looking from the [home page](index.md), or use the search or navigation "
+"on the left hand side of the page."
+msgstr ""
+"Intenta buscar en el [inicio](index.md) o utiliza la búsqueda o la "
+"navegación del lado izquierdo de la página"

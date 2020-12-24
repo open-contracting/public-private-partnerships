@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Open Contracting Partnership
+# This file is distributed under the same license as the Open Contracting Data Standard for Public Private Partnerships package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ben Webb <ben.webb@opendataservices.coop>, 2017
+# Catalina Demidchuk <catalina.d@idatosabiertos.org>, 2017
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Contracting Data Standard for Public Private Partnerships 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-23 14:33-0500\n"
+"PO-Revision-Date: 2017-05-10 17:02+0000\n"
+"Last-Translator: Catalina Demidchuk <catalina.d@idatosabiertos.org>, 2017\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/74632/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../docs/timing.md:1
+msgid "Publication timing"
+msgstr "Tiempos de publicación"
+
+#: ../../docs/timing.md:3
+msgid "Stages"
+msgstr "Etapas"
+
+#: ../../docs/timing.md:5
+msgid ""
+"Information about a Public Private Partnership project will become available"
+" at many different stages."
+msgstr ""
+"La información sobre un proyecto de Asociación Público-Privada estará "
+"disponible en distintas etapas."
+
+#: ../../docs/timing.md:7
+msgid ""
+"The reference page includes information about the stage at which certain "
+"information should be made available."
+msgstr ""
+"La página de referencia incluye información sobre la etapa en la que se debe"
+" poner a disposición determinada información."
+
+#: ../../docs/timing.md:9
+msgid ""
+"OCDS is designed to support real-time publication of information, so within "
+"each stage there may be multiple points where new or updated information is "
+"available. Each time information is provided, we call this an OCDS "
+"'release'."
+msgstr ""
+"El OCDS está diseñado para soportar la publicación en tiempo real de "
+"información, por lo que en cada etapa puede haber varios puntos donde se "
+"encuentra disponible información nueva o actualizada. Cada vez que se "
+"proporciona información, llamamos a esto una \"entrega de OCDS\"."
+
+#: ../../docs/timing.md:11
+msgid ""
+"A PPP process is likely to involve the stages below, the following release "
+"identifiers are a guide and additional releases can be made at any stage of "
+"the project."
+msgstr ""
+"Es probable que un proceso de APP incluya las etapas siguientes, los "
+"siguientes identificadores de entregas son una guía, se pueden hacer "
+"entregas adicionales en cualquier etapa del proyecto."
+
+#: ../../docs/timing.md:13
+msgid "PP: Pre-Procurement"
+msgstr "PP: Pre-Adquisición"
+
+#: ../../docs/timing.md:38
+msgid "P: Procurement"
+msgstr "P: Adquisición"
+
+#: ../../docs/timing.md:73
+msgid "A: Award"
+msgstr "A: Adjudicación"
+
+#: ../../docs/timing.md:88
+msgid "CC: Post Commercial-Close"
+msgstr "CC: Post Cierre Comercial"
+
+#: ../../docs/timing.md:108
+msgid "I: Implementation"
+msgstr "I: Implementación"
+
+#: ../../docs/timing.md:123
+msgid "R: Renegotiation"
+msgstr "R: Renegociación"

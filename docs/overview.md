@@ -1,7 +1,7 @@
 # Overview
 
 ```eval_rst
-.. image:: _assets/documents_data_presentation.png
+.. image:: _static/images/documents_data_presentation.png
    :align: right
 ```
 
@@ -18,7 +18,7 @@ The [OCDS releases and records model](http://standard.open-contracting.org/lates
 ## Data
 
 ```eval_rst
-.. image:: _assets/structured_shareholding.png
+.. image:: _static/images/structured_shareholding.png
    :align: right
    :width: 400
    :target: ../spreadsheet/index.html
@@ -32,7 +32,7 @@ Many elements of the PPP framework call for **structured data**. For example:
 * Details of project finance;
 * A list of shareholders, and shares held;
 
-OCDS for PPPs provides structured data elements to represent this information, using existing OCDS building blocks, or [selected extensions](extensions/index.md). 
+OCDS for PPPs provides structured data elements to represent this information, using existing OCDS building blocks, or [selected extensions](extensions). 
 
 These structured data elements can be represented using JSON data, or via simple spreadsheet templates. 
 
@@ -60,7 +60,7 @@ This way, stakeholders can more easily find the information they need to underst
 ## Presentation 
 
 ```eval_rst
-.. image:: _assets/ocds_show.png
+.. image:: _static/images/ocds_show.png
    :align: right
    :width: 400
    :target: https://open-contracting.github.io/ocds-show-ppp/?load=https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/master/example/full.json

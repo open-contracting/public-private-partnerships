@@ -1,9 +1,19 @@
-.disclosure-timing {
-    float:right;
+.wy-nav-content {
+  max-width: none;
+}
+.rst-content table.docutils {
+  width: 100%;
+  table-layout: fixed;
+}
+.rst-content table.docutils td {
+  vertical-align: top;
+}
+.rst-content code {
+  font-size: 10px;
 }
 
 .wy-table-responsive table td {
-    white-space: normal !important;
+  white-space: normal !important;
 }
 
 .wy-nav-side {
@@ -17,4 +27,16 @@
 }
 .wy-menu-vertical a:hover {
     background: #001b16;
+}
+
+.disclosure-timing {
+    float: right;
+}
+.rst-content .disclosure-timing table.docutils {
+  width: auto;
+  table-layout: auto;
+}
+.rst-content .flattened-example table.docutils {
+  width: auto;
+  table-layout: auto;
 }

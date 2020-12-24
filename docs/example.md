@@ -9,7 +9,7 @@ This allows different stakeholders to understand how a project has developed.
 ## Details
 
 ```eval_rst
-.. image:: _assets/ocds_show.png
+.. image:: _static/images/ocds_show.png
    :target: https://open-contracting.github.io/ocds-show-ppp/?load=https://raw.githubusercontent.com/open-contracting/ocds-show-ppp/master/example/full.json
 ```
 

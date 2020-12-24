@@ -1,0 +1,411 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Open Contracting Partnership
+# This file is distributed under the same license as the Open Contracting Data Standard for Public Private Partnerships package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ben Webb <ben.webb@opendataservices.coop>, 2017
+# Oscar Montiel <oscar.montiel@okfn.org>, 2019
+# Maria Esther Cervantes <mariaesther@idatosabiertos.org>, 2019
+# Romina Fernandez <rfernandez@cds.com.py>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Contracting Data Standard for Public Private Partnerships 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-23 14:33-0500\n"
+"PO-Revision-Date: 2017-05-10 17:03+0000\n"
+"Last-Translator: Romina Fernandez <rfernandez@cds.com.py>, 2019\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/74632/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../docs/reference/codelists.md:1
+msgid "Codelists"
+msgstr "Listas de códigos"
+
+#: ../../docs/reference/codelists.md:3
+msgid ""
+"Some schema fields refer to codelists, to limit and standardize the possible"
+" values of the fields, in order to promote data interoperability."
+msgstr ""
+"Algunos campos del esquema se refieren a listas de código, para limitar y "
+"estandarizar los posibles valores de los campos con el fin de promover la "
+"interoperabilidad de los datos."
+
+#: ../../docs/reference/codelists.md:5
+msgid ""
+"Codelists can either be open or closed. **Closed codelists** are intended to"
+" be comprehensive; for example, the [currency](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#currency) codelist covers all "
+"currencies in the world. **Open codelists** are intended to be "
+"representative, but not comprehensive."
+msgstr ""
+"Las listas de código pueden ser abiertas o cerradas. **Las listas de código "
+"cerradas** están diseñadas para ser exhaustivas, por ejemplo, la lista de "
+"código de [moneda](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#currency) cubre todas las "
+"monedas del mundo. **Las listas de código abiertas** están diseñadas para "
+"ser representativas, no exhaustivas."
+
+#: ../../docs/reference/codelists.md:7
+msgid ""
+"Publishers must use the codes in the codelists, unless no code is "
+"appropriate. If no code is appropriate and the codelist is **open**, then a "
+"publisher may use a new code outside those in the codelist. If no code is "
+"appropriate and the codelist is **closed**, then a publisher should instead "
+"create an issue in the [OCDS for PPPs GitHub repository](https://github.com"
+"/open-contracting-extensions/public-private-partnerships/issues)."
+msgstr ""
+"Los publicadores deben de usar los códigos en las listas de códigos, a menos"
+" de que ningún código sea apropiado. Si ningún código es apropiado y la "
+"lista de código es **abierta**, el publicador puede usar un nuevo código "
+"fuera de esa lista. Si ningún código es apropiado y la lista de código es "
+"**cerrada**, el publicador debe crear un issue en el  [repositorio de Github"
+" de OCDS para APPs](https://github.com/open-contracting-extensions/public-"
+"private-partnerships/issues)."
+
+#: ../../docs/reference/codelists.md:1
+msgid "Extending open codelists"
+msgstr "Extendiendo las listas de código abiertas"
+
+#: ../../None:1
+msgid ""
+"If you use new codes outside those in an open codelist, please create an "
+"issue in the [OCDS for PPPs GitHub repository](https://github.com/open-"
+"contracting-extensions/public-private-partnerships/issues), so that the "
+"codes can be considered for inclusion in the codelist."
+msgstr ""
+"Si usa nuevos códigos fuera de esos en una lista de código abierta, por "
+"favor cree un issue en el [repositorio de Github de OCDS para "
+"APPs](https://github.com/open-contracting-extensions/public-private-"
+"partnerships/issues), para que se pueda considerar incluir los códigos en la"
+" lista de código."
+
+#: ../../docs/reference/codelists.md:19
+msgid ""
+"For more information on open and closed codelists, refer to the Open "
+"Contracting Data Standard [codelists documentation](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/)."
+msgstr ""
+"Para más información en listas de código abiertas o cerradas, puede "
+"referirse a la [documentación de lista de código](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/) del Estándar de Datos de "
+"Contrataciones Abiertas."
+
+#: ../../docs/reference/codelists.md:21
+msgid "OCDS codelists"
+msgstr "Listas de código OCDS"
+
+#: ../../docs/reference/codelists.md:23
+msgid ""
+"OCDS for PPPs reuses some codelists from the Open Contracting Data Standard,"
+" without modification. Refer to the OCDS documentation for details of these "
+"codelists:"
+msgstr ""
+"OCDS para APPs reutiliza algunas listas de código del Estándar de Datos de "
+"Contrataciones Abiertas, sin modificación. Puede ver la documentación OCDS "
+"para los detalles de estas listas de código:"
+
+#: ../../docs/reference/codelists.md:25 ../../docs/reference/codelists.md:50
+msgid "Closed codelists"
+msgstr "Listas de Códigos Cerradas"
+
+#: ../../docs/reference/codelists.md:27
+msgid ""
+"[Award status](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#award-status)"
+msgstr ""
+"[Estatus de adjudicación](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#award-status)"
+
+#: ../../docs/reference/codelists.md:28
+msgid ""
+"[Contract status](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#contract-status)"
+msgstr ""
+"[Estatus de Contrato](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#contract-status)"
+
+#: ../../docs/reference/codelists.md:29
+msgid ""
+"[Currency](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#currency)"
+msgstr ""
+"[Moneda](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#currency)"
+
+#: ../../docs/reference/codelists.md:30
+msgid ""
+"[Procurement method](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#method)"
+msgstr ""
+"[Método de compra](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#method)"
+
+#: ../../docs/reference/codelists.md:31
+msgid ""
+"[Milestone status](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#milestone-status)"
+msgstr ""
+"[Estatus de hito](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#milestone-status)"
+
+#: ../../docs/reference/codelists.md:32
+msgid ""
+"[Procurement category](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#procurement-category)"
+msgstr ""
+"[Categoría de compra](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#procurement-category)"
+
+#: ../../docs/reference/codelists.md:33
+msgid ""
+"[Tender status](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#tender-status)"
+msgstr ""
+"[Estatus de licitación](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#tender-status)"
+
+#: ../../docs/reference/codelists.md:35 ../../docs/reference/codelists.md:152
+msgid "Open codelists"
+msgstr "Listas de códigos abiertas"
+
+#: ../../docs/reference/codelists.md:37
+msgid ""
+"[Award criteria](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#award-criteria)"
+msgstr ""
+"[Criterios de adjudicación](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#award-criteria)"
+
+#: ../../docs/reference/codelists.md:38
+msgid ""
+"[Extended procurement category](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#extended-procurement-category)"
+msgstr ""
+"[Categoría de compra extendida](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#extended-procurement-category)"
+
+#: ../../docs/reference/codelists.md:39
+msgid ""
+"[Item classification scheme](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#item-classification-scheme)"
+msgstr ""
+"[Esquema de clasificación de artículos](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#item-classification-scheme)"
+
+#: ../../docs/reference/codelists.md:40
+msgid ""
+"[Organization identifier scheme](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#organization-identifier-scheme)"
+msgstr ""
+"[Esquema de identificación de organizaciones] (http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#organization-identifier-scheme)"
+
+#: ../../docs/reference/codelists.md:41
+msgid ""
+"[Related process](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#related-process)"
+msgstr ""
+"[Procesos relacionados] (http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#related-process)"
+
+#: ../../docs/reference/codelists.md:42
+msgid ""
+"[Related process scheme](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#related-process-scheme)"
+msgstr ""
+"[Esquema de procesos relacionados](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#related-process-scheme)"
+
+#: ../../docs/reference/codelists.md:43
+msgid ""
+"[Submission method](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#submission-method)"
+msgstr ""
+"[Método de entrega](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#submission-method)"
+
+#: ../../docs/reference/codelists.md:44
+msgid ""
+"[Unit classification scheme](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#unit-classification-scheme)"
+msgstr ""
+"[Esquema de clasificación de unidades] (http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#unit-classification-scheme)"
+
+#: ../../docs/reference/codelists.md:46
+msgid "OCDS for PPPs codelists"
+msgstr "Listas de código OCDS para APPs"
+
+#: ../../docs/reference/codelists.md:48
+msgid ""
+"OCDS for PPPs modifies some codelists from OCDS and reuses codelists from "
+"extensions, without modification. The 'Extension' column in the tables below"
+" indicates where each code originates from."
+msgstr ""
+"El OCDS para APPs modifica algunas listas de código del OCDS y reutiliza "
+"listas de código de extensiones, sin ninguna modificación. La columna "
+"\"Extensión\" en las tablas abajo indica de dónde surge cada código."
+
+#: ../../docs/reference/codelists.md:52
+msgid "bidStatus"
+msgstr "bidStatus"
+
+#: ../../docs/reference/codelists.md:60 ../../docs/reference/codelists.md:162
+msgid ""
+"For additional guidance on using this codelist, refer to the [Bid statistics"
+" and details extension documentation](https://extensions.open-"
+"contracting.org/en/extensions/bids/v1.1.4/)."
+msgstr ""
+"Para guía adicional en el uso de esta lista de código, por favor vea la "
+"[documentación de extensión de Estadísticas y detalles de las "
+"ofertas](https://extensions.open-"
+"contracting.org/es/extensions/bids/v1.1.4/)."
+
+#: ../../docs/reference/codelists.md:62
+msgid "dataType"
+msgstr "dataType"
+
+#: ../../docs/reference/codelists.md:70 ../../docs/reference/codelists.md:110
+#: ../../docs/reference/codelists.md:130
+msgid ""
+"For additional guidance on using this codelist, refer to the [Requirements "
+"extension documentation](https://extensions.open-"
+"contracting.org/en/extensions/requirements/master/)."
+msgstr ""
+"Para guía adicional en el uso de esta lista de código, por favor vea la "
+"[documentación de la extensión de Requisitos](https://extensions.open-"
+"contracting.org/es/extensions/requirements/master/)."
+
+#: ../../docs/reference/codelists.md:72
+msgid "financeCategory"
+msgstr "financeCategory"
+
+#: ../../docs/reference/codelists.md:80
+msgid ""
+"For additional guidance on using this codelist, refer to the [Financing "
+"extension documentation](https://extensions.open-"
+"contracting.org/en/extensions/finance/master/)."
+msgstr ""
+"Para guía adicional al utilizar esta lista de código, vea la [documentación "
+"de extensión de Financiamiento](https://extensions.open-"
+"contracting.org/es/extensions/finance/master/)."
+
+#: ../../docs/reference/codelists.md:82
+msgid "initiationType"
+msgstr "initiationType"
+
+#: ../../docs/reference/codelists.md:90 ../../docs/reference/codelists.md:120
+#: ../../docs/reference/codelists.md:172 ../../docs/reference/codelists.md:182
+msgid ""
+"For additional guidance on using this codelist, refer to the [OCDS for PPPs "
+"extension documentation](https://extensions.open-"
+"contracting.org/en/extensions/ppp/master/)."
+msgstr ""
+"Para guía adicional en utilizar esta lista de código, vea la [documentación "
+"para la extensión OCDS para APPs](https://extensions.open-"
+"contracting.org/es/extensions/ppp/master/)."
+
+#: ../../docs/reference/codelists.md:92
+msgid "preQualificationStatus"
+msgstr "preQualificationStatus"
+
+#: ../../docs/reference/codelists.md:100
+msgid ""
+"For additional guidance on using this codelist, refer to the [Qualification "
+"extension documentation](https://extensions.open-"
+"contracting.org/en/extensions/qualification/master/)."
+msgstr ""
+"Para guía adicional al utilizar esta lista de código, vea la [documentación "
+"de la extensión de Calificación](https://extensions.open-"
+"contracting.org/es/extensions/qualification/master/). "
+
+#: ../../docs/reference/codelists.md:102
+msgid "relatesTo"
+msgstr "relatesTo"
+
+#: ../../docs/reference/codelists.md:112
+msgid "releaseTag"
+msgstr "releaseTag"
+
+#: ../../docs/reference/codelists.md:122
+msgid "responseSource"
+msgstr "responseSource"
+
+#: ../../docs/reference/codelists.md:132
+msgid "riskAllocation"
+msgstr "riskAllocation"
+
+#: ../../docs/reference/codelists.md:140 ../../docs/reference/codelists.md:212
+msgid ""
+"For additional guidance on using this codelist, refer to the [Risk "
+"allocation extension documentation](https://extensions.open-"
+"contracting.org/en/extensions/risk_allocation/master/)."
+msgstr ""
+"Para guía adicional al utilizar esta lista de código, vea la [documentación "
+"de la extensión de Asignación de riesgos](https://extensions.open-"
+"contracting.org/es/extensions/risk_allocation/master/)."
+
+#: ../../docs/reference/codelists.md:142
+msgid "votingRights"
+msgstr "votingRights"
+
+#: ../../docs/reference/codelists.md:150
+msgid ""
+"For additional guidance on using this codelist, refer to the [Shareholders "
+"extension documentation](https://extensions.open-"
+"contracting.org/en/extensions/shareholders/master/)."
+msgstr ""
+"Para guía adicional al usar esta lista de código, vea la [documentación de "
+"la extensión de Accionistas](https://extensions.open-"
+"contracting.org/es/extensions/shareholders/master/)."
+
+#: ../../docs/reference/codelists.md:154
+msgid "bidStatistics"
+msgstr "bidStatistics"
+
+#: ../../docs/reference/codelists.md:164
+msgid "documentType"
+msgstr "documentType"
+
+#: ../../docs/reference/codelists.md:174
+msgid "milestoneCode"
+msgstr "milestoneCode"
+
+#: ../../docs/reference/codelists.md:184
+msgid "milestoneType"
+msgstr "milestoneType"
+
+#: ../../docs/reference/codelists.md:192
+msgid ""
+"For additional guidance on using this codelist, refer to the [OCDS milestone"
+" type codelist documentation](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#milestone-type)."
+msgstr ""
+"Para guía adicional al utilizar esta lista de código, vea la [documentación "
+"de la lista de código de Tipo de hito OCDS](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#milestone-type)."
+
+#: ../../docs/reference/codelists.md:194
+msgid "partyRole"
+msgstr "partyRole"
+
+#: ../../docs/reference/codelists.md:202
+msgid ""
+"For additional guidance on using this codelist, refer to the [OCDS party "
+"role codelist documentation](http://standard.open-"
+"contracting.org/latest/en/schema/codelists/#party-role)."
+msgstr ""
+"Para guía adicional al utilizar esta lista de código, vea la [documentación "
+"de la lista de código Rol de la parte OCDS](http://standard.open-"
+"contracting.org/latest/es/schema/codelists/#party-role)."
+
+#: ../../docs/reference/codelists.md:204
+msgid "riskCategory"
+msgstr "riskCategory"

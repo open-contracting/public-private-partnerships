@@ -1,4 +1,4 @@
 Code,Title,Description
-tenderer,Tenderer,The response should be provided by the tenderer
-buyer,Buyer,The response should be provided by the buyer
-procuringEntity,Procuring entity,The response should be provided by the procuring entity
+tenderer,Tenderer,The response is provided by the tenderer.
+buyer,Buyer,The response is provided by the buyer.
+procuringEntity,Procuring entity,The response is provided by the procuring entity.

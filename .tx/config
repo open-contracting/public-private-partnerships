@@ -2,115 +2,115 @@
 host = https://www.transifex.com
 
 [ocds-for-ppps.framework]
-file_filter = locale/<lang>/LC_MESSAGES/framework.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/framework.po
 source_file = build/locale/framework.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.example]
-file_filter = locale/<lang>/LC_MESSAGES/example.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/example.po
 source_file = build/locale/example.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.ppp-codelists]
-file_filter = locale/<lang>/LC_MESSAGES/ppp-codelists.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/ppp-codelists.po
 source_file = build/locale/ppp-codelists.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.governance]
-file_filter = locale/<lang>/LC_MESSAGES/governance.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/governance.po
 source_file = build/locale/governance.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.spreadsheet]
-file_filter = locale/<lang>/LC_MESSAGES/spreadsheet.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/spreadsheet.po
 source_file = build/locale/spreadsheet.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.overview]
-file_filter = locale/<lang>/LC_MESSAGES/overview.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/overview.po
 source_file = build/locale/overview.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.index]
-file_filter = locale/<lang>/LC_MESSAGES/index.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/index.po
 source_file = build/locale/index.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.timing]
-file_filter = locale/<lang>/LC_MESSAGES/timing.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/timing.po
 source_file = build/locale/timing.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.technical]
-file_filter = locale/<lang>/LC_MESSAGES/technical.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/technical.po
 source_file = build/locale/technical.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.404]
-file_filter = locale/<lang>/LC_MESSAGES/404.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/404.po
 source_file = build/locale/404.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.ppp-schema]
-file_filter = locale/<lang>/LC_MESSAGES/ppp-schema.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/ppp-schema.po
 source_file = build/locale/ppp-schema.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps._static--docson--README]
-file_filter = locale/<lang>/LC_MESSAGES/_static/docson/README.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/_static/docson/README.po
 source_file = build/locale/_static/docson/README.pot
 source_lang = en
 type = PO
 
-[ocds-for-ppps.extensions--index]
-file_filter = locale/<lang>/LC_MESSAGES/extensions/index.po
-source_file = build/locale/extensions/index.pot
+[ocds-for-ppps.extensions]
+file_filter = docs/locale/<lang>/LC_MESSAGES/extensions.po
+source_file = build/locale/extensions.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.reference--codelists]
-file_filter = locale/<lang>/LC_MESSAGES/reference/codelists.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/reference/codelists.po
 source_file = build/locale/reference/codelists.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.reference--changelog]
-file_filter = locale/<lang>/LC_MESSAGES/reference/changelog.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/reference/changelog.po
 source_file = build/locale/reference/changelog.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.reference--browser]
-file_filter = locale/<lang>/LC_MESSAGES/reference/browser.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/reference/browser.po
 source_file = build/locale/reference/browser.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.reference--schema]
-file_filter = locale/<lang>/LC_MESSAGES/reference/schema.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/reference/schema.po
 source_file = build/locale/reference/schema.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.reference--documents]
-file_filter = locale/<lang>/LC_MESSAGES/reference/documents.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/reference/documents.po
 source_file = build/locale/reference/documents.pot
 source_lang = en
 type = PO
 
 [ocds-for-ppps.reference--index]
-file_filter = locale/<lang>/LC_MESSAGES/reference/index.po
+file_filter = docs/locale/<lang>/LC_MESSAGES/reference/index.po
 source_file = build/locale/reference/index.pot
 source_lang = en
 type = PO

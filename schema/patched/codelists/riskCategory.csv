@@ -1,17 +1,17 @@
 Code,Title,Description,Extension
 landAvailability,Land availability and acquisition risk,Relates to the unavailability of land or site to construct the infrastructure at the time of contract signature,Risk Allocation
-environmental,Environmental risk,"Environmental risks may be related to a number of environmental issues such as general contamination, pollution, water contamination, impact on the natural environment etc. An adverse assessment may require changes in design, leading to a direct impact on cost of infrastructure",Risk Allocation
+environmental,Environmental risk,"Environmental risks might be related to a number of environmental issues such as general contamination, pollution, water contamination, impact on the natural environment etc. An adverse assessment might lead to changes in design, leading to a direct impact on cost of infrastructure",Risk Allocation
 design,Design risks,Represents the possibility that design quality for the asset is not adequate to meet project requirements,Risk Allocation
 construction,Construction risks,"Represents the possibility that during the construction Phase, the actual project costs or construction time exceeds the projected time and costs",Risk Allocation
 completion,Completion and commissioning,Refers to the failure to meet the construction outcome or finalization as prescribed,Risk Allocation
 revenue,Revenue risk,Refers to the risk of the revenue flows not being correctly assessed,Risk Allocation
-inflationAndFx,"Foreign exchange, Inflation and indexation risk",Risk that changes in exchange rates or inflation adversely affect the project outcomes,Risk Allocation
+inflationAndFx,"Foreign exchange, inflation and indexation risk",Risk that changes in exchange rates or inflation adversely affect the project outcomes,Risk Allocation
 availabilityAndQuality,Availability and quality risk,Risk linked to availability and quality issues relating to performance requirements and performance target levels,Risk Allocation
 otherRevenue,Other revenue risk events,credit or counterparty risk; fraud/non-payment by users,Risk Allocation
 financeAvailability,Availability of finance,Represents the risk of financing not being available at commercial close or before construction starts,Risk Allocation
 refinancing,Refinancing risks,Risks relating to the downside of refinancing,Risk Allocation
 changeInLaw,Changes in law,Risk that a change in general law or the sector regulatory framework adversely affect the project,Risk Allocation
-forceMajeure,Force Majeure,"Risk that external events beyond the control of the parties to the contract, such as natural disasters, wars, terrorism etc.,  affect the project",Risk Allocation
-earlyTermination,Early termination,Risk that compensation sum due to early termination may be insufficient to meet private party’s financial obligations or is less than expected,Risk Allocation
+forceMajeure,Force majeure,"Risk that external events beyond the control of the parties to the contract, such as natural disasters, wars, terrorism etc., affect the project",Risk Allocation
+earlyTermination,Early termination,Risk that compensation sum due to early termination might be insufficient to meet private party’s financial obligations or is less than expected,Risk Allocation
 compliance,Compliance risks,Risks deriving from the compliance or lack thereof of regulatory obligations related to the development of the project,Risk Allocation
 all,All risks,All risks deriving from the project,Risk Allocation

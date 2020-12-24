@@ -6,11 +6,11 @@
   {{ super() }}
   <p class="oc-developed-by" style="margin-top: 0px">and</p>
   <a href="http://www.worldbank.org/en/topic/publicprivatepartnerships/brief/ppp-tools"> 
-    <img src="http://www.worldbank.org/content/dam/wbr/logo/logo-wb-header-en.svg" />
+    <img src="{{ pathto("_static/images/logo-wb-header-en.svg", True) }}" />
   </a>
   <p class="oc-developed-by" style="margin-top: 0px">supported by</p>
   <a href="https://ppiaf.org/"> 
-    <img src="{{ pathto("_static/ppiaf_logo_rgb_final.png",True) }}" />
+    <img src="{{ pathto("_static/images/ppiaf_logo_mono_final.png", True) }}" />
   </a>
 {% endblock %}
 

@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Open Contracting Partnership
+# This file is distributed under the same license as the Open Contracting Data Standard for Public Private Partnerships package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ben Webb <ben.webb@opendataservices.coop>, 2017
+# Oscar Montiel <oscar.montiel@okfn.org>, 2017
+# Romina Fernandez <rfernandez@cds.com.py>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Contracting Data Standard for Public Private Partnerships 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-23 14:33-0500\n"
+"PO-Revision-Date: 2017-05-10 17:01+0000\n"
+"Last-Translator: Romina Fernandez <rfernandez@cds.com.py>, 2019\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/74632/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../docs/governance.md:1
+msgid "History and governance"
+msgstr "Historia y gobernanza"
+
+#: ../../docs/governance.md:3
+msgid ""
+"OCDS for PPPs was developed between May 2016 and May 2017 through a "
+"partnership between the World Bank Governance Global Practice (GGP), the "
+"World Bank Public Private Partnerships Cross-Cutting Solutions Area (PPP "
+"CCSA) and the Open Contracting Partnership. Open Data Services was hired to "
+"implement the development of the product."
+msgstr ""
+"El OCDS para APPs se desarrolló entre mayo de 2016 y mayo de 2017 a través "
+"de una asociación entre el World Bank Governance Global Practice (GGP), el "
+"World Bank Public Private Partnerships Cross-Cutting Solutions Area (PPP "
+"CCSA) y la Open Contracting Partnership. Se contrató a Open Data Services "
+"para implementar el desarrollo del producto."
+
+#: ../../docs/governance.md:5
+msgid ""
+"You can read more about OCDS for PPPs and other tools for transparency and "
+"accountability in PPPs on the [World Bank Governance for Development "
+"blog](http://blogs.worldbank.org/governance/public-private-partnerships-"
+"transparency-and-accountability-where-my-data)."
+msgstr ""
+"Puede leer más acerca del OCDS para APPs y otras herramientas para la "
+"transparencia y la rendición de cuentas en APPs en el blog de [World Bank "
+"Governance for Development](http://blogs.worldbank.org/governance/public-"
+"private-partnerships-transparency-and-accountability-where-my-data)."
+
+#: ../../docs/governance.md:7
+msgid "Development"
+msgstr "Desarrollo"
+
+#: ../../docs/governance.md:9
+msgid ""
+"You can read more about the early development process on the [Open "
+"Contracting Partnership blog](http://www.open-contracting.org/2016/09/08"
+"/extending-open-contracting-data-standard-ppps/)"
+msgstr ""
+"Puedes leer más sobre el proceso de desarrollo inicial en el blog de [Open "
+"Contracting Partnership](http://www.open-contracting.org/2016/09/08"
+"/extending-open-contracting-data-standard-ppps/)"
+
+#: ../../docs/governance.md:11
+msgid "Governance"
+msgstr "Gobernanza"
+
+#: ../../docs/governance.md:13
+msgid ""
+"As an implementation profile, extending OCDS 1.1, updates to the OCDS schema"
+" will be subject to the [OCDS Governance Process](http://standard.open-"
+"contracting.org/latest/en/support/governance/)."
+msgstr ""
+"Como un perfil de implementación que extiende OCDS 1.1, actualizaciones al "
+"esquema OCDS están sujetas a el [Proceso de Gobernanza OCDS](http://standard"
+".open-contracting.org/latest/es/support/governance/)."
+
+#: ../../docs/governance.md:15
+msgid ""
+"It draws upon the following extensions from the [OCDS extension "
+"registry](http://standard.open-contracting.org/latest/en/extensions/)."
+msgstr ""
+"Se basa en las siguientes extensiones del [registro de extensión "
+"OCDS](http://standard.open-contracting.org/latest/en/extensions/)."
+
+#: ../../docs/governance.md:17
+msgid "ppp"
+msgstr "ppp"
+
+#: ../../docs/governance.md:18
+msgid "process_title"
+msgstr "process_title"
+
+#: ../../docs/governance.md:19
+msgid "location"
+msgstr "location"
+
+#: ../../docs/governance.md:20
+msgid "requirements"
+msgstr "requirements"
+
+#: ../../docs/governance.md:21
+msgid "budget"
+msgstr "budget"
+
+#: ../../docs/governance.md:22
+msgid "budget_project"
+msgstr "budget_project"
+
+#: ../../docs/governance.md:23
+msgid "documentation_details"
+msgstr "documentation_details"
+
+#: ../../docs/governance.md:24
+msgid "metrics"
+msgstr "metrics"
+
+#: ../../docs/governance.md:25
+msgid "risk_allocation"
+msgstr "risk_allocation"
+
+#: ../../docs/governance.md:26
+msgid "shareholders"
+msgstr "shareholders"
+
+#: ../../docs/governance.md:27
+msgid "finance"
+msgstr "finance"
+
+#: ../../docs/governance.md:28
+msgid "qualification"
+msgstr "qualification"
+
+#: ../../docs/governance.md:29
+msgid "tariffs"
+msgstr "tariffs"
+
+#: ../../docs/governance.md:30
+msgid "performance_failures"
+msgstr "performance_failures"
+
+#: ../../docs/governance.md:31
+msgid "signatories"
+msgstr "signatories"
+
+#: ../../docs/governance.md:32
+msgid "charges"
+msgstr "charges"
+
+#: ../../docs/governance.md:33
+msgid "transaction_milestones"
+msgstr "transaction_milestones"
+
+#: ../../docs/governance.md:34
+msgid "bids"
+msgstr "bids"
+
+#: ../../docs/governance.md:35
+msgid "milestone_documents"
+msgstr "milestone_documents"
+
+#: ../../docs/governance.md:37
+msgid ""
+"Issues related to the individual extensions that make up the implementation "
+"profile can be raised on their respective GitHub projects."
+msgstr ""
+"Los issues relacionados con las extensiones individuales que conforman el "
+"perfil de implementación pueden levantarse en sus respectivos proyectos de "
+"GitHub."
+
+#: ../../docs/governance.md:39
+msgid ""
+"General issues relating to their combination in this implementation profile "
+"can be raised [in the project issue tracker](https://github.com/open-"
+"contracting-extensions/public-private-partnerships/issues)."
+msgstr ""
+"Los issues generales relacionados a la combinación de extensiones en este "
+"perfil de implementación pueden agregarse al [issue tracker del "
+"proyecto](https://github.com/open-contracting-extensions/public-private-"
+"partnerships/issues)."
+
+#: ../../docs/governance.md:41
+msgid ""
+"Ongoing maintenance of OCDS for PPPs will be supported by the OCDS Global "
+"Helpdesk, for enquiries please contact [data@open-"
+"contracting.org](mailto:data@open-contracting.org)."
+msgstr ""
+"El mantenimiento de OCDS para APPs será apoyado por la Mesa de Ayuda Técnica"
+" Global de OCDS, en caso de alguna duda puede escribir a [data@open-"
+"contracting.org](mailto:data@open-contracting.org)."

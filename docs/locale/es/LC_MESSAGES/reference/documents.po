@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Open Contracting Partnership
+# This file is distributed under the same license as the Open Contracting Data Standard for Public Private Partnerships package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ben Webb <ben.webb@opendataservices.coop>, 2017
+# James McKinney <jmckinney@open-contracting.org>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Contracting Data Standard for Public Private Partnerships 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-23 14:33-0500\n"
+"PO-Revision-Date: 2017-05-10 17:03+0000\n"
+"Last-Translator: James McKinney <jmckinney@open-contracting.org>, 2018\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/74632/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../docs/reference/documents.md:1
+msgid "Documents"
+msgstr "Documentos"
+
+#: ../../docs/reference/documents.md:3
+msgid ""
+"There are many documents that should be disclosed at points during a PPP "
+"process."
+msgstr ""
+"Hay muchos documentos que deben ser divulgados durante un proceso de APP."
+
+#: ../../docs/reference/documents.md:5
+msgid ""
+"The OCDS for PPPs documentType codelist includes a description of each "
+"document or element of information referenced in the World Bank PPP "
+"Disclosure Framework."
+msgstr ""
+"La lista de códigos documentType de OCDS para APP incluye una descripción de"
+" cada documento o elemento de información referenciado en el Marco de "
+"divulgación de APP del Banco Mundial."
+
+#: ../../docs/reference/documents.md:7
+msgid "Representation"
+msgstr "Representación"
+
+#: ../../docs/reference/documents.md:9
+msgid ""
+"Each document can be represented using a `Document` object. This can "
+"contain:"
+msgstr ""
+"Cada documento se puede representar usando un objeto `Document`. Este puede "
+"contener:"
+
+#: ../../docs/reference/documents.md:11
+msgid "A documentType code;"
+msgstr "Un código documentType;"
+
+#: ../../docs/reference/documents.md:12
+msgid "A short summary of the information required;"
+msgstr "Un breve resumen de la información requerida;"
+
+#: ../../docs/reference/documents.md:13
+msgid ""
+"A direct link to the exact place where the further information is found;"
+msgstr ""
+"Un enlace directo con el lugar exacto donde se encuentra la información "
+"adicional;"
+
+#: ../../docs/reference/documents.md:15
+msgid "The full set of fields for representing a document are shown below"
+msgstr ""
+"El conjunto completo de campos para representar un documento se muestra a "
+"continuación"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Title"
+msgstr "Título"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Type"
+msgstr "Tipo"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Format"
+msgstr "Formato"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Required"
+msgstr "Requerido"
+
+#: ../../docs/reference/documents.md:24
+msgid "Types"
+msgstr "Tipos"
+
+#: ../../docs/reference/documents.md:26
+msgid ""
+"The full list of document types, and where they should appear, is given "
+"below."
+msgstr ""
+"La lista completa de tipos de documentos, y donde deberían aparecer, se "
+"proporciona a continuación."

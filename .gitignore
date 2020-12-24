@@ -1,9 +1,9 @@
-# Update this file from a profile with:
-# curl -O https://raw.githubusercontent.com/open-contracting/standard_profile_template/master/.gitignore
 *.mo
 *.swp
+.cache
 .ve
 
+/*.pdf
 /build
 /cache.sqlite
 /chromedriver

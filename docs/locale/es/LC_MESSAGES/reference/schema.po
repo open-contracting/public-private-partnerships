@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Open Contracting Partnership
+# This file is distributed under the same license as the Open Contracting Data Standard for Public Private Partnerships package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ben Webb <ben.webb@opendataservices.coop>, 2017
+# James McKinney <jmckinney@open-contracting.org>, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Contracting Data Standard for Public Private Partnerships 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-23 14:33-0500\n"
+"PO-Revision-Date: 2017-05-10 17:03+0000\n"
+"Last-Translator: James McKinney <jmckinney@open-contracting.org>, 2020\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/74632/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../docs/reference/schema.md:1
+msgid "Full schema reference"
+msgstr "Referencia completa del esquema"
+
+#: ../../docs/reference/schema.md:3
+msgid ""
+"The table below contains all possible fields provided by the [OCDS for PPPs "
+"schema](../../_static/patched/release-schema.json)"
+msgstr ""
+"La siguiente tabla contiene todos los campos posibles proporcionados por el "
+"esquema de [OCDS para APPs](../../_static/patched/release-schema.json)"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Title"
+msgstr "Título"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Type"
+msgstr "Tipo"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Format"
+msgstr "Formato"
+
+#: ../../sphinxcontrib-jsonschema:1
+msgid "Required"
+msgstr "Requerido"

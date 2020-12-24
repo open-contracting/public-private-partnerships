@@ -40,5 +40,9 @@
   ],
   "compatibility": [
     "1.1"
-  ]
+  ],
+  "contactPoint": {
+    "name": "Open Contracting Partnership",
+    "email": "data@open-contracting.org"
+  }
 }

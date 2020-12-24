@@ -84,7 +84,8 @@
           "items": {
             "$ref": "#/definitions/Metric"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "requirementResponses": {
           "title": "Requirement responses",
@@ -93,7 +94,8 @@
           "items": {
             "$ref": "#/definitions/RequirementResponse"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "preferredBidders": {
           "title": "Preferred bidders",
@@ -102,15 +104,15 @@
           "items": {
             "$ref": "#/definitions/OrganizationReference"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "evaluationIndicators": {
           "title": "Evaluation of PPP option",
           "description": "Key indicators that describe how the PPP option has been evaluated by government.",
           "$ref": "#/definitions/EvaluationIndicators"
         },
-        "suppliers": null,
-        "amendment": null
+        "suppliers": null
       }
     },
     "BidsStatistic": {
@@ -261,7 +263,8 @@
           "items": {
             "$ref": "#/definitions/RequirementResponse"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       }
     },
@@ -288,7 +291,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "amount": {
           "title": "Amount",
@@ -312,9 +316,10 @@
         "sourceParty": {
           "$ref": "#/definitions/OrganizationReference",
           "title": "Source party",
-          "description": "The organization or other party related to this budget entry. If the budget amount is positive, this indicates a flow of resources from the party to the contracting process. If the budget amount is negative, it indicates a payment from the contracting process to this party."
+          "description": "An organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget. The party must have the 'funder' role. If the budget amount is positive, this indicates a flow of resources from the party to the contracting process. If the budget amount is negative, it indicates a payment from the contracting process to this party."
         }
-      }
+      },
+      "minProperties": 1
     },
     "Budget": {
       "properties": {
@@ -325,112 +330,18 @@
           "items": {
             "$ref": "#/definitions/BudgetBreakdown"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
-        "source": null,
-        "project": null,
-        "projectID": null
-      }
-    },
-    "Planning": {
-      "properties": {
-        "project": {
-          "title": "Project information",
-          "description": "The project section can be used to describe the relationship between this contracting process and a project or programme of work.",
-          "$ref": "#/definitions/Project"
-        },
-        "forecasts": {
-          "type": "array",
-          "title": "Forecasts",
-          "description": "Any forecasts metrics for this results of this contracting process.",
-          "items": {
-            "$ref": "#/definitions/Metric"
-          },
-          "uniqueItems": true
-        }
-      }
-    },
-    "Project": {
-      "title": "Project information",
-      "description": "A project or programme of work.",
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "Project identifier",
-          "description": "An externally provided identifier for the project. This might be drawn from a projects register, or may be based on the canonical version of a project name. Project IDs should be unique to a publisher. URIs can be used. ",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "title": {
-          "title": "Project title",
-          "description": "The name of the project to which this contracting process relates. Some organizations maintain a registry of projects, and the data should use the name by which the project is known in that registry. ",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "description": {
-          "title": "Project description",
-          "description": "A short free text description of the project.",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "totalValue": {
-          "title": "Total project value",
-          "description": "The total anticipated value of the project over it's lifetime. ",
-          "$ref": "#/definitions/Value"
-        },
-        "uri": {
-          "title": "Linked project information",
-          "description": "A URI pointing to further information about this project.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "uri"
-        },
-        "sector": {
-          "title": "Project sector",
-          "description": "A high-level categorization of the main sector this procurement process relates to. Use of [UN COFOG codes](https://unstats.un.org/unsd/publications/catalogue?selectID=145), with 'COFOG' as the classification scheme, and the numerical COFOG code is recommended for the primary sector classification.",
-          "$ref": "#/definitions/Classification"
-        },
-        "additionalClassifications": {
-          "title": "Additional sector classifications",
-          "description": "Additional project classification, by other sector classifications, or using other classification schemes (e.g. against a strategic framework).",
+        "finance": {
+          "title": "Finance",
+          "description": "An array with details of each source of finance planned for this procedure.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Classification"
+            "$ref": "#/definitions/Finance"
           },
           "uniqueItems": true,
-          "wholeListMerge": true
-        },
-        "locations": {
-          "title": "Project location",
-          "description": "Information about the location where a project is taking place.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Location"
-          },
-          "uniqueItems": true,
-          "wholeListMerge": true
-        }
-      },
-      "patternProperties": {
-        "^(description_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "^(title_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "minItems": 1
         }
       }
     },
@@ -443,7 +354,8 @@
           "items": {
             "$ref": "#/definitions/Charge"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "metrics": {
           "type": "array",
@@ -452,7 +364,8 @@
           "items": {
             "$ref": "#/definitions/Metric"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "performanceFailures": {
           "title": "Performance failure disclosures",
@@ -461,7 +374,8 @@
           "items": {
             "$ref": "#/definitions/PerformanceFailure"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "tariffs": {
           "type": "array",
@@ -470,7 +384,8 @@
           "items": {
             "$ref": "#/definitions/Tariff"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       }
     },
@@ -494,7 +409,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "paidBy": {
           "title": "Paid by",
@@ -532,43 +448,49 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Document": {
       "properties": {
         "pageStart": {
           "title": "Page start",
-          "description": "When the information referenced exists within a large document, indicate the first page on which it can be found. This should refer to the printed page number, not the page number reported by software applications. ",
+          "description": "When the information referenced exists within a large document, indicate the first page on which it can be found. This should refer to the printed page number, not the page number reported by software applications.",
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "pageEnd": {
           "title": "Page end",
-          "description": "When the information referenced exists within a large document, indicate the last page on which it can be found. This should refer to the printed page number, not the page number reported by software applications. ",
+          "description": "When the information referenced exists within a large document, indicate the last page on which it can be found. This should refer to the printed page number, not the page number reported by software applications.",
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "accessDetails": {
           "title": "Access details",
-          "description": "A description of any special arrangements required to access this document. This may include a requirement to register for document access, a fee to be paid, or the location where documents can be inspected. ",
+          "description": "A description of any special arrangements needed to access this document, for example: registering for access, paying a fee, or visiting a location to inspect the document.",
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "author": {
           "title": "Author",
-          "description": "The name of the author of these documents. Include the name of individuals and/or organizations responsible. For example, when a technical specification was written by a consultant, include the name and organization of the consultant. ",
+          "description": "The names of the authors of the document.",
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
       }
     },
@@ -581,7 +503,8 @@
           "items": {
             "$ref": "#/definitions/Finance"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "agreedMetrics": {
           "type": "array",
@@ -590,7 +513,8 @@
           "items": {
             "$ref": "#/definitions/Metric"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "requirementResponses": {
           "title": "Requirement responses",
@@ -599,7 +523,8 @@
           "items": {
             "$ref": "#/definitions/RequirementResponse"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "riskAllocation": {
           "title": "Risk allocation",
@@ -608,7 +533,8 @@
           "items": {
             "$ref": "#/definitions/Risk"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "signatories": {
           "title": "Contract signatories",
@@ -617,7 +543,8 @@
           "items": {
             "$ref": "#/definitions/OrganizationReference"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "tariffs": {
           "type": "array",
@@ -626,14 +553,14 @@
           "items": {
             "$ref": "#/definitions/Tariff"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "financeSummary": {
           "title": "Finance summary",
           "description": "Key indicators that describe the financial model of the PPP.",
           "$ref": "#/definitions/FinanceSummary"
-        },
-        "amendment": null
+        }
       }
     },
     "Finance": {
@@ -656,7 +583,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "description": {
           "title": "Description",
@@ -664,7 +592,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "financingParty": {
           "title": "Financing party",
@@ -673,7 +602,7 @@
         },
         "financeType": {
           "title": "Finance type",
-          "description": "The type of finance arranged, from the finance type codelist.",
+          "description": "The type of finance arranged.",
           "type": [
             "string",
             "null"
@@ -693,7 +622,7 @@
         },
         "financeCategory": {
           "title": "Finance category",
-          "description": "For categorizing the nature of any financial investment. This field must be filled in for debt finance. This information can be used to identify the order of preference for investors to get their money back in cases of liquidation.",
+          "description": "The nature of the finance. This information can be used when determining the order of preference for investors to get their money back in cases of liquidation.",
           "type": [
             "string",
             "null"
@@ -727,12 +656,13 @@
           "properties": {
             "base": {
               "title": "Base",
-              "description": "The variable to which an additional margin amount is added to get the Interest amount. This can be specified as a fixed number, as a known variable (e.g. LIBOR), or can be omitted if margin specifies the entire interest rate.",
+              "description": "The variable to which an additional margin amount is added to get the Interest amount. This can be specified as a fixed number, as a known variable (e.g. LIBOR or LIBOR+1%), or can be omitted if margin specifies the entire interest rate.",
               "type": [
                 "string",
                 "number",
                 "null"
-              ]
+              ],
+              "minLength": 1
             },
             "margin": {
               "title": "Margin",
@@ -756,9 +686,11 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             }
-          }
+          },
+          "minProperties": 1
         },
         "repaymentFrequency": {
           "type": [
@@ -785,7 +717,8 @@
             "null"
           ]
         }
-      }
+      },
+      "minProperties": 1
     },
     "Item": {
       "properties": {
@@ -894,6 +827,25 @@
         }
       }
     },
+    "Planning": {
+      "properties": {
+        "forecasts": {
+          "type": "array",
+          "title": "Forecasts",
+          "description": "Any forecasts metrics for this results of this contracting process.",
+          "items": {
+            "$ref": "#/definitions/Metric"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "project": {
+          "title": "Project information",
+          "description": "The project section can be used to describe the relationship between this contracting process and a project or programme of work.",
+          "$ref": "#/definitions/Project"
+        }
+      }
+    },
     "Tender": {
       "properties": {
         "targets": {
@@ -903,7 +855,8 @@
           "items": {
             "$ref": "#/definitions/Metric"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "criteria": {
           "title": "Criteria",
@@ -912,9 +865,9 @@
           "items": {
             "$ref": "#/definitions/Criterion"
           },
-          "uniqueItems": true
-        },
-        "amendment": null
+          "uniqueItems": true,
+          "minItems": 1
+        }
       }
     },
     "Metric": {
@@ -941,7 +894,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "description": {
           "title": "Description",
@@ -949,7 +903,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "observations": {
           "type": "array",
@@ -958,9 +913,11 @@
           "items": {
             "$ref": "#/definitions/Observation"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Observation": {
       "type": "object",
@@ -993,7 +950,8 @@
             "string",
             "number",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "unit": {
           "type": "object",
@@ -1006,17 +964,19 @@
                 "null"
               ],
               "title": "Unit name",
-              "description": "The name of the unit."
+              "description": "The name of the unit.",
+              "minLength": 1
             },
             "scheme": {
               "title": "Scheme",
-              "description": "The list from which units of measure identifiers are taken. This should be an entry in the unitClassificationScheme codelist. Use of the scheme 'UNCEFACT' for the UN/CEFACT Recommendation 20 list of 'Codes for Units of Measure Used in International Trade' is recommended.   ",
+              "description": "The list from which units of measure identifiers are taken. Use of the scheme 'UNCEFACT' for the UN/CEFACT Recommendation 20 list of \"Codes for Units of Measure Used in International Trade\" is recommended.",
               "type": [
                 "string",
                 "null"
               ],
               "codelist": "unitClassificationScheme.csv",
-              "openCodelist": true
+              "openCodelist": true,
+              "minLength": 1
             },
             "id": {
               "title": "ID",
@@ -1024,7 +984,8 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             },
             "uri": {
               "title": "URI",
@@ -1035,7 +996,8 @@
               ],
               "format": "uri"
             }
-          }
+          },
+          "minProperties": 1
         },
         "dimensions": {
           "type": "object",
@@ -1046,9 +1008,11 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             }
-          }
+          },
+          "minProperties": 1
         },
         "notes": {
           "title": "Notes",
@@ -1056,14 +1020,16 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "relatedImplementationMilestone": {
           "title": "Related implementation milestone",
           "description": "A link to the milestone in the implementation section of OCDS to which this forecast, target or actual observation relates.",
           "$ref": "#/definitions/MilestoneReference"
         }
-      }
+      },
+      "minProperties": 1
     },
     "MilestoneReference": {
       "type": "object",
@@ -1085,9 +1051,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Milestone": {
       "properties": {
@@ -1125,7 +1093,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "events": {
           "title": "Number of events",
@@ -1141,7 +1110,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "penaltyImposed": {
           "title": "Penalty imposed",
@@ -1149,7 +1119,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "penaltyPaid": {
           "title": "Penalty paid",
@@ -1159,7 +1130,100 @@
             "null"
           ]
         }
-      }
+      },
+      "minProperties": 1
+    },
+    "Project": {
+      "title": "Project information",
+      "description": "A project or programme of work.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Project identifier",
+          "description": "An externally provided identifier for the project. This might be drawn from a projects register, or may be based on the canonical version of a project name. Project IDs should be unique to a publisher. URIs can be used. ",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "title": {
+          "title": "Project title",
+          "description": "The name of the project to which this contracting process relates. Some organizations maintain a registry of projects, and the data should use the name by which the project is known in that registry. ",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "description": {
+          "title": "Project description",
+          "description": "A short free text description of the project.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "totalValue": {
+          "title": "Total project value",
+          "description": "The total anticipated value of the project over it's lifetime. ",
+          "$ref": "#/definitions/Value"
+        },
+        "uri": {
+          "title": "Linked project information",
+          "description": "A URI pointing to further information about this project.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "sector": {
+          "title": "Project sector",
+          "description": "A high-level categorization of the main sector this procurement process relates to. Use of [UN COFOG codes](https://unstats.un.org/unsd/publications/catalogue?selectID=145), with 'COFOG' as the classification scheme, and the numerical COFOG code is recommended for the primary sector classification.",
+          "$ref": "#/definitions/Classification"
+        },
+        "additionalClassifications": {
+          "title": "Additional sector classifications",
+          "description": "Additional project classification, by other sector classifications, or using other classification schemes (e.g. against a strategic framework).",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Classification"
+          },
+          "uniqueItems": true,
+          "wholeListMerge": true,
+          "minItems": 1
+        },
+        "locations": {
+          "title": "Project location",
+          "description": "Information about the location where a project is taking place.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Location"
+          },
+          "uniqueItems": true,
+          "wholeListMerge": true,
+          "minItems": 1
+        }
+      },
+      "patternProperties": {
+        "^(description_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "^(title_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "minProperties": 1
     },
     "PreQualification": {
       "title": "Pre-qualification",
@@ -1184,7 +1248,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "description": {
           "title": "Pre-qualification description",
@@ -1192,11 +1257,12 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "status": {
           "title": "Pre-qualification status",
-          "description": "The current status of the pre-qualification based on the preQualificationStatus codelist.",
+          "description": "The current status of the pre-qualification.",
           "type": [
             "string",
             "null"
@@ -1214,15 +1280,19 @@
         },
         "submissionMethod": {
           "title": "Submission method",
-          "description": "Specify the method by which bids must be submitted, in person, written, or electronic auction. Using the [submission method codelist](http://standard.open-contracting.org/latest/en/schema/codelists/#submission-method)",
+          "description": "The methods by which bids are submitted.",
           "type": [
             "array",
             "null"
           ],
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
-          "uniqueItems": true
+          "codelist": "submissionMethod.csv",
+          "openCodelist": true,
+          "uniqueItems": true,
+          "minItems": 1
         },
         "submissionMethodDetails": {
           "title": "Submission method details",
@@ -1230,7 +1300,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "period": {
           "title": "Pre-qualification period",
@@ -1256,7 +1327,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "qualificationPeriod": {
           "title": "Qualification period",
@@ -1278,7 +1350,8 @@
           "items": {
             "$ref": "#/definitions/OrganizationReference"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "procuringEntity": {
           "title": "Procuring entity",
@@ -1287,12 +1360,13 @@
         },
         "documents": {
           "title": "Documents",
-          "description": "All documents and attachments related to the pre-qualification, including any notices. See the [documentType codelist](http://standard.open-contracting.org/profiles/ppp/latest/{{lang}}/reference/codelists/#documenttype) for details of potential documents to include.",
+          "description": "All documents and attachments related to the pre-qualification, including any notices. See the `documentType.csv` codelist for details of potential documents to include.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Document"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "milestones": {
           "title": "Milestones",
@@ -1301,7 +1375,8 @@
           "items": {
             "$ref": "#/definitions/Milestone"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "amendments": {
           "description": "An amendment is a formal change to the pre-qualification process, and generally involves the publication of a new RFQ notice/release. The rationale and a description of the changes made can be provided here.",
@@ -1310,7 +1385,8 @@
           "items": {
             "$ref": "#/definitions/Amendment"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       },
       "patternProperties": {
@@ -1318,27 +1394,32 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "^(description_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "^(submissionMethodDetails_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "^(eligibilityCriteria_(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)))$": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Criterion": {
       "type": "object",
@@ -1363,7 +1444,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "description": {
           "title": "Description",
@@ -1371,11 +1453,12 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "source": {
           "title": "Source",
-          "description": "Source of response to the requirements specified in the criterion, for example responses may be submitted by tenderers or by an assessment committee at the procuringEntity.",
+          "description": "Source of response to the requirements specified in the criterion. For example, responses might be submitted by tenderers or by an assessment committee at the procuringEntity.",
           "type": [
             "string",
             "null"
@@ -1391,7 +1474,7 @@
         },
         "relatesTo": {
           "title": "Related schema element",
-          "description": "The schema element that the criterion judges, evaluates or assesses. For example criterion may be defined against items or against bidders.",
+          "description": "The schema element that the criterion judges, evaluates or assesses. For example, the criterion might be defined against items or against bidders.",
           "type": [
             "string",
             "null"
@@ -1410,7 +1493,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "requirementGroups": {
           "title": "Requirement groups",
@@ -1419,9 +1503,11 @@
           "items": {
             "$ref": "#/definitions/RequirementGroup"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "RequirementGroup": {
       "type": "object",
@@ -1443,7 +1529,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "requirements": {
           "title": "Requirements",
@@ -1452,9 +1539,11 @@
           "items": {
             "$ref": "#/definitions/Requirement"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Requirement": {
       "type": "object",
@@ -1476,7 +1565,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "description": {
           "title": "Requirement description",
@@ -1484,7 +1574,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "dataType": {
           "title": "Requirement datatype",
@@ -1510,7 +1601,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "expectedValue": {
           "title": "Expected value",
@@ -1521,7 +1613,8 @@
             "number",
             "boolean",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "minValue": {
           "title": "Minimum value",
@@ -1546,7 +1639,8 @@
           "description": "Used to specify a particular period the requirement applies to, for example the bidder's turnover in a given year.",
           "$ref": "#/definitions/Period"
         }
-      }
+      },
+      "minProperties": 1
     },
     "RequirementResponse": {
       "type": "object",
@@ -1569,7 +1663,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "description": {
           "title": "Description",
@@ -1577,7 +1672,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "value": {
           "title": "Value",
@@ -1588,7 +1684,8 @@
             "number",
             "boolean",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "period": {
           "title": "Period",
@@ -1605,7 +1702,8 @@
           "description": "Where this requirement response relates to a tenderer and is provided by the buyer or procuring entity this field should be used to reference the entry in the parties section for the tenderer the response relates to.",
           "$ref": "#/definitions/OrganizationReference"
         }
-      }
+      },
+      "minProperties": 1
     },
     "RequirementReference": {
       "type": "object",
@@ -1627,9 +1725,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Risk": {
       "title": "Risk",
@@ -1650,13 +1750,14 @@
         },
         "category": {
           "title": "Risk category",
-          "description": "Specify the category of the risk against the risk category codelist.",
+          "description": "The category of the risk.",
           "type": [
             "string",
             "null"
           ],
           "codelist": "riskCategory.csv",
-          "openCodelist": true
+          "openCodelist": true,
+          "minLength": 1
         },
         "description": {
           "title": "Risk description",
@@ -1664,7 +1765,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "allocation": {
           "title": "Risk allocation",
@@ -1688,9 +1790,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Shareholder": {
       "type": "object",
@@ -1725,7 +1829,7 @@
         },
         "votingRights": {
           "title": "Shareholder voting rights",
-          "description": "Specify the type of voting rights associated with the shares held by the shareholder against the voting rights codelist.",
+          "description": "The type of voting rights associated with the shares held by the shareholder.",
           "type": [
             "string",
             "null"
@@ -1747,7 +1851,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "notes": {
           "title": "Shareholder notes",
@@ -1755,9 +1860,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Organization": {
       "properties": {
@@ -1768,7 +1875,8 @@
           "items": {
             "$ref": "#/definitions/Shareholder"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "beneficialOwnership": {
           "type": "object",
@@ -1781,9 +1889,11 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             }
-          }
+          },
+          "minProperties": 1
         }
       }
     },
@@ -1807,7 +1917,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "paidBy": {
           "title": "Paid by",
@@ -1845,17 +1956,19 @@
                 "null"
               ],
               "title": "Unit name",
-              "description": "The name of the unit that the tariff is charged against. E.g. tonnes,"
+              "description": "The name of the unit that the tariff is charged against. E.g. tonnes,",
+              "minLength": 1
             },
             "scheme": {
               "title": "Scheme",
-              "description": "The list from which units of measure identifiers are taken. This should be an entry in the unitClassificationScheme codelist. Use of the scheme 'UNCEFACT' for the UN/CEFACT Recommendation 20 list of 'Codes for Units of Measure Used in International Trade' is recommended.   ",
+              "description": "The list from which units of measure identifiers are taken. Use of the scheme 'UNCEFACT' for the UN/CEFACT Recommendation 20 list of \"Codes for Units of Measure Used in International Trade\" is recommended.",
               "type": [
                 "string",
                 "null"
               ],
               "codelist": "unitClassificationScheme.csv",
-              "openCodelist": true
+              "openCodelist": true,
+              "minLength": 1
             },
             "id": {
               "title": "ID",
@@ -1863,7 +1976,8 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             },
             "uri": {
               "title": "URI",
@@ -1874,7 +1988,8 @@
               ],
               "format": "uri"
             }
-          }
+          },
+          "minProperties": 1
         },
         "dimensions": {
           "type": "object",
@@ -1885,9 +2000,11 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             }
-          }
+          },
+          "minProperties": 1
         },
         "notes": {
           "title": "Tariff notes",
@@ -1895,9 +2012,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Transaction": {
       "properties": {
@@ -1905,23 +2024,7 @@
           "title": "Related implementation milestone",
           "description": "A link to the milestone in the implementation section of OCDS to which this transaction relates.",
           "$ref": "#/definitions/MilestoneReference"
-        },
-        "amount": null,
-        "providerOrganization": null,
-        "receiverOrganization": null
-      }
-    },
-    "OrganizationReference": {
-      "properties": {
-        "address": null,
-        "identifier": null,
-        "additionalIdentifiers": null,
-        "contactPoint": null
-      }
-    },
-    "Amendment": {
-      "properties": {
-        "changes": null
+        }
       }
     },
     "EvaluationIndicators": {
@@ -1943,7 +2046,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "discountRate": {
           "title": "Discount rate",
@@ -1959,7 +2063,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "netPresentValue": {
           "title": "Net present value",
@@ -1972,9 +2077,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "FinanceSummary": {
       "type": "object",
@@ -1995,7 +2102,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "shareCapital": {
           "title": "Share capital",
@@ -2008,7 +2116,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "subsidyRatio": {
           "title": "Subsidy ratio",
@@ -2024,7 +2133,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "projectIRR": {
           "title": "Project Internal Rate of Return",
@@ -2040,9 +2150,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     }
   }
 }

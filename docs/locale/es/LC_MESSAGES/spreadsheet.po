@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Open Contracting Partnership
+# This file is distributed under the same license as the Open Contracting Data Standard for Public Private Partnerships package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ben Webb <ben.webb@opendataservices.coop>, 2017
+# James McKinney <jmckinney@open-contracting.org>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Contracting Data Standard for Public Private Partnerships 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-23 14:33-0500\n"
+"PO-Revision-Date: 2017-05-10 17:02+0000\n"
+"Last-Translator: James McKinney <jmckinney@open-contracting.org>, 2018\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/74632/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../docs/spreadsheet.md:1
+msgid "Spreadsheet template"
+msgstr "Plantilla de hoja de cálculo"
+
+#: ../../docs/spreadsheet.md:3
+msgid ""
+"In most cases, OCDS for PPPs data will be created and analyzed using "
+"customized tools."
+msgstr ""
+"En la mayoría de los casos, los datos de OCDS para APPs serán creados y "
+"analizados usando herramientas personalizadas."
+
+#: ../../docs/spreadsheet.md:5
+msgid ""
+"However, as a proof-of-concept - and to demonstrate the flattened "
+"serialization of the data model - we have prepared a spreadsheet template "
+"that can be used to provide detailed disclosures for a PPP project."
+msgstr ""
+"Sin embargo, como prueba de concepto y para demostrar la serialización plana"
+" del modelo de datos, hemos preparado una plantilla de hoja de cálculo que "
+"se puede utilizar para proporcionar divulgación detallada para un proyecto "
+"de APP."
+
+#: ../../docs/spreadsheet.md:7
+msgid ""
+"The template is [available to view via Google Sheets "
+"here](https://docs.google.com/spreadsheets/d"
+"/1kQSit3fUcyuCN48C9HeIEnrBzbO9sPDj2NUS-8c8VRk/edit#gid=159397949) or [you "
+"can take your own copy to edit](https://docs.google.com/spreadsheets/d"
+"/1kQSit3fUcyuCN48C9HeIEnrBzbO9sPDj2NUS-8c8VRk/copy)."
+msgstr ""
+"La plantilla está [disponible para ver a través de Hojas de cálculo de "
+"Google aquí](https://docs.google.com/spreadsheets/d"
+"/1kQSit3fUcyuCN48C9HeIEnrBzbO9sPDj2NUS-8c8VRk/edit#gid=159397949) o [puede "
+"hacer su propia copia para editar](https://docs.google.com/spreadsheets/d"
+"/1kQSit3fUcyuCN48C9HeIEnrBzbO9sPDj2NUS-8c8VRk/copy)."
+
+#: ../../docs/spreadsheet.md:14
+msgid ""
+"Unlike the [framework reference](framework.md) which reflects the ordering "
+"of properties required by the World Bank PPP Disclosure Framework, the "
+"spreadsheet template is structured around the stages of a **contracting "
+"process**."
+msgstr ""
+"A diferencia del [marco de referencia](framework.md) que refleja el "
+"ordenamiento de propiedades requerido por el marco de divulgación de APP del"
+" Banco Mundial, la planilla de hoja de cálculo se estructura en torno a las "
+"etapas de un **proceso de contratación**."
+
+#: ../../docs/spreadsheet.md:16
+msgid ""
+"This means it can also be a useful tool for implementers to think about the "
+"points in time at which information will become available."
+msgstr ""
+"Esto significa que también puede ser una herramienta útil para que los "
+"implementadores piensen en los puntos en el tiempo en los que la información"
+" estará disponible."
+
+#: ../../docs/spreadsheet.md:18
+msgid ""
+"The table structures and validation in the template can also be used to "
+"construct smaller data collection tools: for example, monthly metrics "
+"reporting sheets."
+msgstr ""
+"Las estructuras de tablas y la validación en la plantilla también se pueden "
+"utilizar para construir herramientas de recopilación de datos más pequeñas: "
+"por ejemplo, hojas de informes de métricas mensuales."
+
+#: ../../docs/spreadsheet.md:20
+msgid ""
+"Advanced users may wish to consult the [flatten tool spreadsheet designers "
+"guide](http://flatten-tool.readthedocs.io/en/latest/unflatten/) which "
+"explains the syntax used in column headings (row 5) to map between the "
+"structured JSON model of OCDS for PPPs, and tabular data."
+msgstr ""
+"Los usuarios avanzados pueden consultar la [guía de diseñadores de hojas de "
+"cálculo de herramientas de aplanamiento](http://flatten-"
+"tool.readthedocs.io/es/latest/unflatten/) que explica la sintaxis utilizada "
+"en los encabezados de columna (fila 5) para mapear entre el modelo "
+"estructurado en JSON de OCDS para APPs, y datos tabulares."

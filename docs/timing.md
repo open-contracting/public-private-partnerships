@@ -134,5 +134,3 @@ A PPP process is likely to involve the stages below, the following release ident
 <td>contractUpdate</td>
 </tr>
 </tbody></table>
-
-
